@@ -133,8 +133,10 @@ Through this project, I practiced:
 - Data Modeling in Power BI
 - DAX Measures and KPIs
 - Dashboard Design Principles
+- Visualizations
 - Business Data Analysis
 - Data Storytelling
+- SQL Queries
 
 ---
 
