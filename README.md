@@ -1,103 +1,180 @@
-# 🍕 Pizza Sales Dashboard (Power BI)
+# 🍕 Pizza Sales Dashboard | Power BI + SQL
 
-## 📌 Project Overview
+![Pizza Sales Dashboard](Home.jpeg)
 
-This project presents an interactive **Pizza Sales Dashboard** built in **Power BI** using pizza sales transaction data from **01-Jan-2015 to 31-Dec-2015**.
+An end-to-end **Sales Analytics Project** built using **MySQL** and **Power BI** to analyze pizza sales performance throughout 2015.
 
-The dashboard helps analyze overall business performance, sales trends, customer ordering behavior, pizza category performance, and best/worst-selling pizzas.
+This project leverages SQL for KPI calculations and business analysis, while Power BI is used to create an interactive dashboard for data visualization and decision-making.
 
 ---
 
-## 📊 Dashboard Screens
+## 📊 Dashboard Preview
 
-### 🏠 Home Dashboard
+### Home Dashboard
 
 ![Home Dashboard](Home.jpeg)
 
-This page provides a high-level overview of pizza sales performance through KPIs and visualizations.
+### Best & Worst Sellers Dashboard
 
-#### Key KPIs
-- Total Revenue: **817.86K**
-- Average Order Value: **38.31**
-- Total Pizzas Sold: **49,574**
-- Total Orders: **21,350**
-- Average Pizzas per Order: **2.32**
-
-#### Insights Covered
-- Daily Trend for Total Orders
-- Monthly Trend for Total Orders
-- Sales Percentage by Pizza Category
-- Sales Percentage by Pizza Size
-- Total Pizzas Sold by Category
-- Busiest Days and Months
-- Best Performing Pizza Categories and Sizes
+![Best & Worst Sellers Dashboard](Best-Worst%20Seller.jpeg)
 
 ---
 
-### 🏆 Best & Worst Sellers Dashboard
+## 🎯 Project Objectives
 
-![Best Worst Sellers](Best-Worst%20Seller.jpeg)
-
-This page focuses on identifying top-performing and underperforming pizzas.
-
-#### Best Sellers Analysis
-- Top 5 Pizzas by Revenue
-- Top 5 Pizzas by Quantity Sold
-- Top 5 Pizzas by Total Orders
-
-#### Worst Sellers Analysis
-- Bottom 5 Pizzas by Revenue
-- Bottom 5 Pizzas by Quantity Sold
-- Bottom 5 Pizzas by Total Orders
+* Analyze overall sales performance.
+* Identify best-selling and worst-selling pizzas.
+* Discover ordering trends by day and month.
+* Evaluate sales contribution by pizza category and size.
+* Build an interactive dashboard for business decision-making.
 
 ---
 
-## 📂 Dataset Information
+## 📁 Dataset
 
 **File:** `pizza_sales.csv`
 
-### Dataset Period
-- Start Date: **01-Jan-2015**
-- End Date: **31-Dec-2015**
+**Period Covered:**
+📅 01-Jan-2015 to 31-Dec-2015
 
-### Dataset Contains
-- Order Details
-- Order Date & Time
-- Pizza Name
-- Pizza Category
-- Pizza Size
-- Quantity Sold
-- Unit Price
-- Total Price
+### Dataset Features
 
----
-
-## 🛠 Tools & Technologies Used
-
-- **Power BI**
-- **Power Query**
-- **DAX (Data Analysis Expressions)**
-- **CSV Dataset**
+* Order ID
+* Order Date
+* Order Time
+* Pizza Name
+* Pizza Category
+* Pizza Size
+* Quantity
+* Unit Price
+* Total Price
 
 ---
 
-## 📈 Business Questions Answered
+## 🔄 Project Workflow
 
-- What is the total revenue generated?
-- Which pizza categories contribute the most sales?
-- Which pizza sizes are most popular?
-- What are the busiest ordering days and months?
-- Which pizzas generate the highest revenue?
-- Which pizzas receive the highest number of orders?
-- Which pizzas are underperforming and may need attention?
+1. Data Collection (`pizza_sales.csv`)
+2. Data Cleaning using Power Query
+3. KPI Calculation using SQL
+4. Data Modeling in Power BI
+5. DAX Measure Creation
+6. Dashboard Development
+7. Business Insight Generation
 
 ---
 
-## 📁 Repository Structure
+## 📈 Key Performance Indicators (KPIs)
 
-```
+| KPI                      |   Value |
+| ------------------------ | ------: |
+| Total Revenue            | 817.86K |
+| Average Order Value      |   38.31 |
+| Total Pizzas Sold        |  49,574 |
+| Total Orders             |  21,350 |
+| Average Pizzas per Order |    2.32 |
+
+---
+
+## 📋 Dashboard Pages
+
+### 🏠 Home Dashboard
+
+Provides a high-level overview of business performance through:
+
+* Revenue KPIs
+* Total Orders Analysis
+* Daily Order Trends
+* Monthly Order Trends
+* Sales by Pizza Category
+* Sales by Pizza Size
+* Total Pizzas Sold by Category
+
+### 📌 Best & Worst Sellers Dashboard
+
+Highlights product performance through:
+
+#### Top Performers
+
+* Top 5 Pizzas by Revenue
+* Top 5 Pizzas by Quantity Sold
+* Top 5 Pizzas by Total Orders
+
+#### Bottom Performers
+
+* Bottom 5 Pizzas by Revenue
+* Bottom 5 Pizzas by Quantity Sold
+* Bottom 5 Pizzas by Total Orders
+
+---
+
+## 🔍 Business Insights
+
+### Sales Trends
+
+* Identified busiest days based on total orders.
+* Analyzed monthly sales patterns.
+* Discovered peak business periods throughout the year.
+
+### Category Analysis
+
+* Sales contribution by pizza category.
+* Sales contribution by pizza size.
+* Category-wise pizza sales performance.
+
+### Product Performance
+
+* Best-selling pizzas based on revenue.
+* Most frequently ordered pizzas.
+* Lowest-performing pizzas requiring business attention.
+
+---
+
+## 🗄 SQL Analysis
+
+All SQL queries used for KPI calculations and business analysis are included in:
+
+📄 `Pizza_Sales_SQL_Queries.docx`
+
+### SQL Analysis Covers
+
+* Total Revenue
+* Average Order Value
+* Total Orders
+* Total Pizzas Sold
+* Average Pizzas Per Order
+* Daily Order Trends
+* Monthly Order Trends
+* Sales by Pizza Category
+* Sales by Pizza Size
+* Top 5 Pizzas by Revenue
+* Bottom 5 Pizzas by Revenue
+* Top 5 Pizzas by Quantity Sold
+* Bottom 5 Pizzas by Quantity Sold
+* Top 5 Pizzas by Total Orders
+* Bottom 5 Pizzas by Total Orders
+
+---
+
+## 🛠 Tools & Technologies
+
+* MySQL
+* SQL
+* Power BI
+* Power Query
+* DAX
+* Microsoft Excel
+* CSV Dataset
+
+---
+
+## 📂 Repository Structure
+
+```text
+Pizza-Sales-Dashboard/
+│
 ├── pizza_sales.csv
 ├── pizza_sales_dashboard.pbix
+├── Pizza_Sales_SQL_Queries.docx
 ├── Home.jpeg
 ├── Best-Worst Seller.jpeg
 └── README.md
@@ -108,19 +185,64 @@ This page focuses on identifying top-performing and underperforming pizzas.
 ## 🚀 How to Use
 
 1. Clone this repository.
+
+```bash
+git clone https://github.com/your-username/Pizza-Sales-Dashboard.git
+```
+
 2. Open `pizza_sales_dashboard.pbix` in Power BI Desktop.
-3. Refresh the dataset if required.
-4. Explore dashboard pages and filters.
+3. Review the SQL logic in `Pizza_Sales_SQL_Queries.docx`.
+4. Refresh the dataset if required.
+5. Explore dashboard pages and interact with filters and slicers.
+
+---
+
+## 📚 Skills Demonstrated
+
+### Data Analytics
+
+* Data Cleaning
+* Exploratory Data Analysis
+* KPI Development
+* Business Performance Analysis
+
+### SQL
+
+* Aggregations
+* Group By Operations
+* Date-Based Analysis
+* Business Query Writing
+
+### Power BI
+
+* Data Modeling
+* DAX Measures
+* Dashboard Design
+* Interactive Reporting
+
+### Business Intelligence
+
+* Trend Analysis
+* Category Analysis
+* Product Performance Analysis
+* Data Storytelling
 
 ---
 
 ## 📷 Dashboard Features
 
-✅ Interactive Filters & Slicers  
-✅ KPI Cards  
-✅ Trend Analysis  
-✅ Category-wise Performance Analysis  
-✅ Best & Worst Seller Identification  
+✅ Interactive Filters & Slicers
+
+✅ KPI Cards
+
+✅ Daily & Monthly Trend Analysis
+
+✅ Category-wise Performance Analysis
+
+✅ Size-wise Sales Analysis
+
+✅ Best & Worst Seller Identification
+
 ✅ Business Insights Visualization
 
 ---
@@ -129,20 +251,44 @@ This page focuses on identifying top-performing and underperforming pizzas.
 
 Through this project, I practiced:
 
-- Data Cleaning using Power Query
-- Data Modeling in Power BI
-- DAX Measures and KPIs
-- Dashboard Design Principles
-- Visualizations
-- Business Data Analysis
-- Data Storytelling
-- SQL Queries
+* Data Cleaning using Power Query
+* SQL-Based Business Analysis
+* KPI Development and Reporting
+* Data Modeling in Power BI
+* DAX Measure Creation
+* Dashboard Design Principles
+* Business Intelligence Reporting
+* Data Storytelling and Visualization
 
 ---
 
 ## 👨‍💻 Author
 
-**Meet Gajera**
+### Meet Gajera
 
-Data Science & AI/ML Student  
-Passionate about Data Analytics, Machine Learning, and Business Intelligence.
+Data Science & AI/ML Student at L.D. College of Engineering
+
+Interested in:
+
+* Data Analytics
+* Business Intelligence
+* Machine Learning & deep Learning
+* Data Visualization
+* SQL & Power BI
+
+### 🔗 Connect With Me
+
+* GitHub: [https://github.com/your-github-username](https://github.com/meetgajera12)
+* LinkedIn: [https://linkedin.com/in/your-linkedin-profile](https://www.linkedin.com/in/meet-gajera-12m32006/)
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving the repository a **Star ⭐**.
+
+Your support helps showcase the project and motivates future development.
+
+---
+
+### Thanks for visiting! 🚀
