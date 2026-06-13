@@ -1,6 +1,5 @@
 # 🍕 Pizza Sales Dashboard | Power BI + SQL
 
-![Pizza Sales Dashboard](Home.jpeg)
 
 An end-to-end **Sales Analytics Project** built using **MySQL** and **Power BI** to analyze pizza sales performance throughout 2015.
 
